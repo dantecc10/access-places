@@ -1,10 +1,23 @@
+<?php
+include_once "php scripts/functions.php";
+
+$tabla = "access_places";
+$campos = array();
+$campos = ["id_access_places", "name_access_places", "quantity_imgs_access_places", "imgs_access_places", "coordinate1_access_places", "coordinate2_access_places", "description_access_places"];
+
+$id = $_GET['id'];
+
+$info = fetch_fields($tabla, $campos, $id, "");
+?>
+
+
 <!DOCTYPE html>
 <html lang="es-mx">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Accesos Inclusivos</title>
+    <title>Detalle - "<?php echo($info[1]); ?>" - Accesos Inclusivos</title>
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta name="description" content="Sitio web para encontrar accesos inclusivos en Chignahuapan, Puebla.">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
@@ -27,64 +40,40 @@
         </div>
     </nav>
     <header class="text-center text-white bg-primary masthead">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="../assets/img/profile.png">
+        <div class="container">
             <h1 class="fs-1">Accesos Inclusivos</h1>
-            <h2 class="font-weight-light mb-0">Sitio web para mostrar ubicaciones de acceso inclusivo en Chignahuapan</h2>
+            <h2 class="font-weight-light mb-0">Detalle de ubicación</h2>
         </div>
     </header>
-    <section id="portfolio" class="portfolio">
+    <section>
         <div class="container">
-            <h2 class="text-uppercase text-center text-secondary">Ubicaciones</h2>
+            <h2 class="text-uppercase text-center text-secondary">Información</h2>
             <div class="card shadow">
                 <div class="card-header">
-                    <p class="text-primary m-0 fw-bold">Ubicaciones en la base de datos</p>
+                    <p class="text-primary m-0 fw-bold">Detalle de ubicación</p>
                 </div>
                 <div class="card-body">
-
-                    <div class="table-responsive table mt-2" role="grid" ria-described-by="dataTable_info">
-                        <table class="table my-0 cell-text">
-                            <thead>
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Ubicación</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                include_once "php scripts/functions.php";
-
-                                $tabla = "access_places";
-                                $campos = array();
-                                $campos = ["id_access_places", "name_access_places", "quantity_imgs_access_places", "imgs_access_places", "coordinate1_access_places", "coordinate2_access_places", "description_access_places"];
-
-                                $info = fetch_fields($tabla, $campos, "", "");
-
-                                $html = "<tr>
-                                            <td>
-                                                <a href='detail.php?id=FLAG'>
-                                                    FLAG
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href='detail.php?id=FLAG'>
-                                                    FLAG, FLAG
-                                                </a>
-                                            </td>
-                                        </tr>";
-
-                                $flag = "FLAG";
-                                $arreglos = array();
-                                $arreglos = [0, 1, 0, 4, 5];
-
-                                $n = sizeof($info);
-                                for ($i = 0; $i < $n; $i++) {
-                                    echo (flag_replacer($html, $flag, $info[$i], $arreglos));
-                                }
-                                ?>
-                            </tbody>
-                        </table>
+                    <div class="row">
+                        <div class="col col-12 col-md-8 p-3"><iframe allowfullscreen="" frameborder="0" src="https://maps.google.com/maps?q=<?php echo($info[4]); ?>,<?php echo($info[5]); ?>&amp;z=15&amp;output=embed" width="100%" height="400"></iframe></div>
+                        <div class="col col-12 col-md-4">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="text-primary text-center"><?php echo($info[1]); ?></h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center"><span class="fs-3 text-center text-secondary">Ubicado en: <?php echo($info[4]); ?>, <?php echo($info[5]); ?></span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fs-4 d-flex justify-content-center"><?php echo($info[6]); ?></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="row">
+                        <div class="col"><img style="width: 100%;height: auto;" src="<?php echo($info[6]); ?>"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -235,3 +224,7 @@
 </body>
 
 </html>
+
+
+
+$text='<div class="col"><img style="width: 100%;height: auto;" src="assets/img/profile.png" /></div>'
