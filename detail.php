@@ -72,7 +72,7 @@ $info = fetch_fields($tabla, $campos, $id, "");
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col"><img style="width: 100%;height: auto;" src="<?php echo($info[6]); ?>"></div>
+                        <div class="col"><img style="width: 100%;height: auto;" src="<?php echo($info[3]); ?>"></div>
                     </div>
                 </div>
             </div>
