@@ -5,9 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Accesos Inclusivos</title>
-    <meta name="author" content="Dante Castelán Carpinteyro">
+    <meta name="twitter:description" content="Sitio web para encontrar accesos inclusivos en Chignahuapan, Puebla.">
+    <meta name="twitter:image" content="https://teacherdhapps.castelancarpinteyro.com/assets/img/logo.png">
+    <meta property="og:type" content="website">
     <meta name="description" content="Sitio web para encontrar accesos inclusivos en Chignahuapan, Puebla.">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <meta name="author" content="Dante Castelán Carpinteyro">
+    <meta property="og:image" content="https://teacherdhapps.castelancarpinteyro.com/assets/img/logo.png">
+    <meta name="twitter:title" content="Accesos Inclusivos">
+    <link rel="icon" type="image/png" sizes="664x660" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="664x660" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="664x660" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="664x660" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="664x660" href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,7 +37,7 @@
         </div>
     </nav>
     <header class="text-center text-white bg-primary masthead">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="../assets/img/profile.png">
+        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">
             <h1 class="fs-1">Accesos Inclusivos</h1>
             <h2 class="font-weight-light mb-0">Sitio web para mostrar ubicaciones de acceso inclusivo en Chignahuapan</h2>
         </div>
@@ -125,7 +135,7 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="../assets/img/portfolio/cabin.png">
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                             </div>
                         </div>
@@ -144,7 +154,7 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="../assets/img/portfolio/cake.png">
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cake.png">
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                             </div>
                         </div>
@@ -163,7 +173,7 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="../assets/img/portfolio/circus.png">
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/circus.png">
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                             </div>
                         </div>
@@ -182,7 +192,7 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="../assets/img/portfolio/game.png">
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/game.png">
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                             </div>
                         </div>
@@ -201,7 +211,7 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="../assets/img/portfolio/safe.png">
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/safe.png">
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                             </div>
                         </div>
@@ -220,7 +230,7 @@
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="../assets/img/portfolio/submarine.png">
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/submarine.png">
                                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                             </div>
                         </div>
@@ -231,7 +241,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/freelancer.js"></script>
+    <script src="assets/js/freelancer.js"></script>
 </body>
 
 </html>
