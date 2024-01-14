@@ -224,7 +224,3 @@ $info = fetch_fields($tabla, $campos, $id, "");
 </body>
 
 </html>
-
-
-
-$text='<div class="col"><img style="width: 100%;height: auto;" src="assets/img/profile.png" /></div>'
