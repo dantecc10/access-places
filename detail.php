@@ -1,11 +1,15 @@
 <?php
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}else{
+    header("Location: index.php");
+}
+
 include_once "php scripts/functions.php";
 
 $tabla = "access_places";
 $campos = array();
 $campos = ["id_access_places", "name_access_places", "quantity_imgs_access_places", "imgs_access_places", "coordinate1_access_places", "coordinate2_access_places", "description_access_places"];
-
-$id = $_GET['id'];
 
 $info = fetch_fields($tabla, $campos, $id, "");
 ?>
@@ -17,9 +21,19 @@ $info = fetch_fields($tabla, $campos, $id, "");
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Detalle - "<?php echo($info[1]); ?>" - Accesos Inclusivos</title>
-    <meta name="author" content="Dante Castelán Carpinteyro">
+    <title>Detalle - "<?php echo ($info[1]); ?>" - Accesos Inclusivos</title>
+    <meta name="twitter:description" content="Sitio web para encontrar accesos inclusivos en Chignahuapan, Puebla.">
+    <meta name="twitter:image" content="https://teacherdhapps.castelancarpinteyro.com/assets/img/logo.png">
+    <meta property="og:type" content="website">
     <meta name="description" content="Sitio web para encontrar accesos inclusivos en Chignahuapan, Puebla.">
+    <meta name="author" content="Dante Castelán Carpinteyro">
+    <meta property="og:image" content="https://teacherdhapps.castelancarpinteyro.com/assets/img/logo.png">
+    <meta name="twitter:title" content="Accesos Inclusivos">
+    <link rel="icon" type="image/png" sizes="664x660" href="../assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="664x660" href="../assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="664x660" href="../assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="664x660" href="../assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="664x660" href="../assets/img/logo.png">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
@@ -54,25 +68,25 @@ $info = fetch_fields($tabla, $campos, $id, "");
                 </div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col col-12 col-md-8 p-3"><iframe allowfullscreen="" frameborder="0" src="https://maps.google.com/maps?q=<?php echo($info[4]); ?>,<?php echo($info[5]); ?>&amp;z=15&amp;output=embed" width="100%" height="400"></iframe></div>
+                        <div class="col col-12 col-md-8 p-3"><iframe allowfullscreen="" frameborder="0" src="https://maps.google.com/maps?q=<?php echo ($info[4]); ?>,<?php echo ($info[5]); ?>&amp;z=15&amp;output=embed" width="100%" height="400"></iframe></div>
                         <div class="col col-12 col-md-4">
                             <div class="row">
                                 <div class="col">
-                                    <h1 class="text-primary text-center"><?php echo($info[1]); ?></h1>
+                                    <h1 class="text-primary text-center"><?php echo ($info[1]); ?></h1>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col d-flex justify-content-center"><span class="fs-3 text-center text-secondary">Ubicado en: <?php echo($info[4]); ?>, <?php echo($info[5]); ?></span></div>
+                                <div class="col d-flex justify-content-center"><span class="fs-3 text-center text-secondary">Ubicado en: <?php echo ($info[4]); ?>, <?php echo ($info[5]); ?></span></div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <p class="fs-4 d-flex justify-content-center"><?php echo($info[6]); ?></p>
+                                    <p class="fs-4 d-flex justify-content-center"><?php echo ($info[6]); ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col"><img style="width: 100%;height: auto;" src="<?php echo($info[3]); ?>"></div>
+                        <div class="col"><img style="width: 100%;height: auto;" src="<?php echo ($info[3]); ?>"></div>
                     </div>
                 </div>
             </div>
