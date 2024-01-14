@@ -40,6 +40,7 @@
                     <p class="text-primary m-0 fw-bold">Ubicaciones en la base de datos</p>
                 </div>
                 <div class="card-body">
+
                     <div class="table-responsive table mt-2" role="grid" ria-described-by="dataTable_info">
                         <table class="table my-0 cell-text">
                             <thead>
@@ -49,17 +50,43 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Rampa de acceso en CECyTE</td>
-                                    <td>18.4567, -97.4567</td>
-                                </tr>
-                                <tr>
-                                    <td>Rampa de acceso en CECyTE</td>
-                                    <td>18.4567, -97.4567</td>
-                                </tr>
+                                <?php
+                                include_once "php scripts/functions.php";
+
+                                $tabla = "access_places";
+                                $campos = array();
+                                $campos = ["id_access_places", "name_access_places", "quantity_imgs_access_places", "imgs_access_places", "coordinate1_access_places", "coordinate2_access_places", "description_access_places"];
+
+                                $info = fetch_fields($tabla, $campos, "", "");
+
+                                $html = "<tr>
+                                            <td>
+                                                <a href='detail.php?id=FLAG'>
+                                                    FLAG
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href='detail.php?id=FLAG'>
+                                                    FLAG, FLAG
+                                                </a>
+                                            </td>
+                                        </tr>";
+
+                                $flag = "FLAG";
+                                $arreglos = array();
+                                $arreglos = [0, 1, 0, 4, 5];
+
+                                $n = sizeof($info);
+                                for ($i = 0; $i < $n; $i++) {
+                                    echo (flag_replacer($html, $flag, $info[$i], $arreglos));
+                                }
+
+                                ?>
+
                             </tbody>
                         </table>
                     </div>
+
                 </div>
             </div>
         </div>
