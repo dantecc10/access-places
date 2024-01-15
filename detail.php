@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-}else{
+} else {
     header("Location: index.php");
 }
 
@@ -86,7 +86,7 @@ $info = fetch_fields($tabla, $campos, $id, "");
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col"><img style="width: 100%;height: auto;" src="<?php echo ($info[3]); ?>"></div>
+                        <div class="col"><img style="width: 100%;height: auto;" src="assets/img/locations/<?php echo ($info[3]); ?>"></div>
                     </div>
                 </div>
             </div>
