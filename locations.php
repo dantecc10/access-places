@@ -37,7 +37,7 @@
         </div>
     </nav>
     <header class="text-center text-white bg-primary masthead">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">
+        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/logo.png">
             <h1 class="fs-1">Accesos Inclusivos</h1>
             <h2 class="font-weight-light mb-0">Sitio web para mostrar ubicaciones de acceso inclusivo en Chignahuapan</h2>
         </div>
