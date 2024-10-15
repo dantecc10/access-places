@@ -61,7 +61,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                include_once "php scripts/functions.php";
+                                include_once "php-scripts/functions.php";
 
                                 $tabla = "access_places";
                                 $campos = array();

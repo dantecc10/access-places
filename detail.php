@@ -5,7 +5,7 @@ if (isset($_GET['id'])) {
     header("Location: index.php");
 }
 
-include_once "php scripts/functions.php";
+include_once "php-scripts/functions.php";
 
 $tabla = "access_places";
 $campos = array();
