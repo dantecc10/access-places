@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Lista de ubicaciones - Accesos Inclusivos</title>
+    <title>Lista de ubicaciones - APPuerta Abierta</title>
     <meta name="twitter:description" content="Sitio web para encontrar accesos inclusivos en Chignahuapan, Puebla.">
     <meta name="twitter:image" content="https://teacherdhapps.castelancarpinteyro.com/assets/img/logo.png">
     <meta property="og:type" content="website">
     <meta name="description" content="Sitio web para encontrar accesos inclusivos en Chignahuapan, Puebla.">
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta property="og:image" content="https://teacherdhapps.castelancarpinteyro.com/assets/img/logo.png">
-    <meta name="twitter:title" content="Accesos Inclusivos">
+    <meta name="twitter:title" content="APPuerta Abierta">
     <link rel="icon" type="image/png" sizes="664x660" href="assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="664x660" href="assets/img/logo.png">
     <link rel="icon" type="image/png" sizes="664x660" href="assets/img/logo.png">
@@ -25,7 +25,7 @@
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Accesos Inclusivos</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand" href="#page-top">APPuerta Abierta</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.php">INICIO</a></li>
@@ -38,7 +38,7 @@
     </nav>
     <header class="text-center text-white bg-primary masthead">
         <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/logo.png">
-            <h1 class="fs-1">Accesos Inclusivos</h1>
+            <h1 class="fs-1">APPuerta Abierta</h1>
             <h2 class="font-weight-light mb-0">Sitio web para mostrar ubicaciones de acceso inclusivo en Chignahuapan</h2>
         </div>
     </header>
@@ -77,14 +77,15 @@
                                             </td>
                                             <td>
                                                 <a href='detail.php?id=FLAG'>
-                                                    FLAG, FLAG
+                                                    Ver mapa
                                                 </a>
                                             </td>
                                         </tr>";
 
                                 $flag = "FLAG";
                                 $arreglos = array();
-                                $arreglos = [0, 1, 0, 4, 5];
+                                //$arreglos = [0, 1, 0, 4, 5];
+                                $arreglos = [0, 1, 0];
 
                                 $n = sizeof($info);
                                 for ($i = 0; $i < $n; $i++) {
@@ -117,13 +118,13 @@
                 </div>
                 <div class="col-md-4">
                     <h4 class="text-uppercase mb-4">DESARROLLADORES</h4>
-                    <p class="lead mb-0"><span><em>Accesos Inclusivos</em> es creado por estudiantes para un proyecto.</span></p>
+                    <p class="lead mb-0"><span><em>APPuerta Abierta</em> es creado por estudiantes para un proyecto.</span></p>
                 </div>
             </div>
         </div>
     </footer>
     <div class="text-center text-white copyright py-4">
-        <div class="container"><small>Copyright ©&nbsp;Accesos Inclusivos 2024</small></div>
+        <div class="container"><small>Copyright ©&nbsp;APPuerta Abierta 2024</small></div>
     </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
